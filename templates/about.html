@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- about -->
+<div class="contents container">
+    <div class="row row-cols-2">
+        <div class="col pt-5 px-5">
+            <h2>About 최창규</h2>
+            <p class="fs-5">안녕하세요 저는 최창규라고합니다. 반가워요!</p>
+            <img src="{% static 'img/travel.jpeg' %}" class="img-thumbnail">
+        </div>
+        <div class="col p-5 index">
+            <h2>목차</h2>
+            <ol>
+                <li>isoutofbounds</li>
+                <li>hobby</li>
+                <li>advantage</li>
+            </ol>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row">
+        <div class="col-7 pe-5">
+            <h2>isoutofbounds</h2>
+            <p class="fs-5">왜 isoutofbounds인가요? <br><br>
+                <span class="fst-italic">
+                    [out of bounds]<br>
+                    "1. 농구에서 공 또는 공을 가진 사람이 경계선을 넘어서 코트 바깥으로 나가는 일."<br>
+                    "2. 프로그래밍 용어로, 프로그램이 프로그래머가 지정해 놓은 배열이나 메모리 범위를 넘어선 범위를 뜻하는 것을 의미한다.
+                    프로그램은 메모리 상에서만 읽고 쓰여져야 하는데, 이 설계가 잘못돼서 배열의 크기가 모자르게 된다거나 메모리 크기를 잘못 넣어줄 경우 
+                    정해준 범위를 넘어서 읽거나 기록하게 되어 프로그램이 빈공간이나 다른 프로그램의 메모리를 읽거나 쓰게 된다.
+                    이 에러는 컴파일러에서 잡아주긴 어려운 에러이기 때문에 이 버그가 그대로 프로그램에 올라간 채로 나오는 경우가 있는데, 
+                    이 경우 시스템 내에 다른 메모리 범위를 참조하거나 수정해서 별의 별 오류를 만들어내는 것을 볼 수 있다."
+                </span>
+            </p>
+        </div>
+        <div class="col-5">
+            <img src="{% static 'img/isoutofbounds.jpeg' %}" class="img-thumbnail">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row">
+        <div class="col-5 pe-5">
+            <img src="{% static 'img/climb.jpeg' %}" class="img-thumbnail">
+        </div>
+        <div class="col-7">
+            <h2>hobby</h2>
+            <p class="fs-5">클라이밍, 농구, 수영<br><br>
+                저는 활동적인 것을 좋아합니다.<br>
+                가장 좋아하는 운동은 클라이밍, 농구, 수영이며, 최근에는 클라이밍을 열심히 하고 있습니다!
+            </p>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row">
+        <div class="col-7 pe-5">
+            <h2>advantage</h2>
+            <p class="fs-5">도전정신<br><br>
+                저는 호기심이 많고, 새로운 경험을 위해 도전하는 것을 좋아합니다.<br>
+                최근에 했던 도전은 혼자 일본 여행을 하는 것이었습니다. 잘 알려지지 않은 도시를 돌아다니다가
+                운동장에서 혼자 축구를 하고 있는 친구와 함께 축구를 하기도 했습니다. <br><br>
+                <span class="fst-italic">(참고로 저는 일본어를 하지 못하기 때문에 약간의 영어와 
+                    바디랭귀지를 통해 소통했습니다.)</span><br><br>
+            </p>
+        </div>
+        <div class="col-5">
+            <img src="{% static 'img/soccer.jpeg' %}" class="img-thumbnail">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+</div>
+{% endblock %}

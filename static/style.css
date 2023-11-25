@@ -1,7 +1,57 @@
-textarea {
-    width:100%;
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+
+
+#logo {
+    font-family: 'Satisfy', cursive;
+    font-weight: 900;
 }
 
-input[type=submit] {
-    margin-top:10px;
+.masthead {
+    padding-top: 200px;
+    padding-bottom: 180px;
+    text-align: center;
+    background-image: url("img/travel.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+.subheading {
+    font-size: 25px;
+    font-style: italic;
+    line-height: 25px;
+    margin-bottom: 20px;
+    color: aliceblue;
+    -webkit-text-stroke: 1px black;
+}
+
+.heading {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 25px;
+    color: aliceblue;
+    -webkit-text-stroke: 1px black;
+}
+
+footer {
+    text-align: center;
+    font-size: medium;
+}
+
+.index li {
+    font-style: italic;
+    font-size: 150%;
+    font-weight: 600;
+    margin: 50px 0;
+}
+
+.index h2 {
+    margin-top: 200px;
+}
+
+.featurette-divider {
+    margin: 100px 0;
 }

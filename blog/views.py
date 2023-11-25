@@ -20,6 +20,14 @@ def comment_create(request, post_id):
     return redirect('blog:detail', post_id=post_id)
 
 def post_create(request):
-    form = PostForm()
-    context = {'form':form}
+    if request.method == 'POST':
+        form = PostForm(request.POST)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.create_date = timezone.now()
+            post.save()
+            return redirect('blog:index')
+    else:
+        form = PostForm()
+    context = {'form': form}
     return render(request, 'blog/post_form.html', context)

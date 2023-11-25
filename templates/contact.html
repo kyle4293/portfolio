@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Contact -->
+<div class="contents container py-4">
+    <div class="text-center">
+        <h2 class="section-heading text-uppercase">Contact</h2>
+        <hr>
+        <div class="row">
+            <div class="my-5 col-lg-4">
+                <div class="team-member">
+                    <div class="mx-auto">
+                        <img class="mx-auto" src="{% static 'img/email.png' %}" alt="..." width="50px;">
+                        <h4>Email</h4>
+                        <a class="text-muted pt-3">chang4293@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="my-5 col-lg-4">
+                <div class="team-member">
+                    <a href="https://www.instagram.com/changgyu4293/"><img class="mx-auto" src="{% static 'img/instagram.png' %}" alt="..." width="50px;"></a>
+                    <h4>Instagram</h4>
+                    <a class="text-muted pt-3" href="https://www.instagram.com/changgyu4293/"><i> @changgyu4293</i></a>
+                </div>
+            </div>
+            <div class="my-5 col-lg-4">
+                <div class="team-member">
+                    <a href="https://github.com/kyle4293"><img class="mx-auto" src="{% static 'img/github.png' %}" alt="..." width="50px;"></a>
+                    <h4>GitHub</h4>
+                    <a class="text-muted pt-3" href="https://github.com/kyle4293"><i>kyle4293</i></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="my-5 row">
+            <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
+        </div>
+    </div>
+</div>
+{% endblock %}
