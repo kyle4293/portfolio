@@ -2,10 +2,14 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
 from .models import Post
 from .forms import PostForm
+from django.core.paginator import Paginator
 
 def index(request):
+    page = request.GET.get('page',1)
     post_list = Post.objects.order_by('-create_date')
-    context = {'posts': post_list}
+    paginator = Paginator(post_list, 10)
+    page_obg = paginator.get_page(page)
+    context = {'posts': page_obg}
     return render(request, 'blog/post_list.html', context)
 
 
